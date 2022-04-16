@@ -19,7 +19,7 @@
 <ul>
 <li>The push() method adds new items to the end of an array.</li>
 <li>The unshift() method adds new elements to the beginning of an array.</li>
-<li>The splice() method adds and/or removes array elements.</li>
+<li>The splice() method adds and/or removes array elements in an especific index.</li>
 </ul>
 
 
@@ -45,7 +45,7 @@ array.splice(index, howManyItemsToDelete, "additem1", "additem2", "addItem...");
 <ul>
 <li>The pop() method removes (pops) the last element of an array.</li>
 <li>The shift() method removes the first item of an array.</li>
-<li>The splice() method adds and/or removes array elements.</li>
+<li>The splice() method adds and/or removes array elements in an especific index.</li>
 </ul>
 
 

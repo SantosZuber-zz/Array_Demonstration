@@ -26,12 +26,18 @@ pushBtn.onclick = function () {
         array.push(getRandomEmoji())
         updateArray();
     }
+    else {
+        updateArray();
+    }
 }
 
 unshiftBtn.onclick = function () {
     if (!isFull) {
         isEmpty = false;
         array.unshift(getRandomEmoji())
+        updateArray();
+    }
+    else {
         updateArray();
     }
 }
@@ -41,6 +47,9 @@ spliceABtn.onclick = function () {
         isEmpty = false;
         let spliceA_number = document.getElementById("number__input-add").value;
         array.splice(spliceA_number, 0, getRandomEmoji());
+        updateArray();
+    }
+    else {
         updateArray();
     }
 }
@@ -53,11 +62,17 @@ popBtn.onclick = function () {
         array.pop()
         updateArray();
     }
+    else {
+        updateArray();
+    }
 }
 shiftBtn.onclick = function () {
     if (!isEmpty) {
         isFull = false;
         array.shift()
+        updateArray();
+    }
+    else {
         updateArray();
     }
 }
@@ -66,6 +81,9 @@ spliceRBtn.onclick = function () {
         let spliceR_number = document.getElementById("number__input-remove").value;
         isFull = false;
         array.splice(spliceR_number, 1)
+        updateArray();
+    }
+    else {
         updateArray();
     }
 }

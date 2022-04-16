@@ -54,6 +54,6 @@ array.splice(index, howManyItemsToDelete, "additem1", "additem2", "addItem...");
 
 ```javascript
 array.pop();
-array.shift("item");
+array.shift();
 array.splice(index, howManyItemsToDelete, "additem1", "additem2", "addItem...");
 ```
